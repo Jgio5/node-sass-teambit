@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.more {
+  color: #2c4792;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #2c4792;
+  color: #2c4792;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav ul li i {
+  font-size: 12px;
+}
+
+[class^=logo_] {
+  height: 12px;
+  width: 12px;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 450px;
+}
+.jumbotron .cl_left,
+.jumbotron .cl_right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.cl_left h1 {
+  margin-bottom: 15px;
+}
+.cl_left p {
+  margin-bottom: 30px;
+}
+
+.row_login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.row_login .btn_login {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row_login .btn_login .btn {
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+  background-color: #2c4792;
+}
+.row_login .btn_login span {
+  margin: 0 5px;
+}
+.row_login .email_login {
+  cursor: pointer;
+}
+
+.cl_right img {
+  height: 100%;
+  width: 100%;
+}
+
+#vignette {
+  background-color: #ffe7d2;
+}
+
+.part_1,
+.part_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part_1 h1,
+.part_2 h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.part_1 .box_row,
+.part_2 .box_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.part_1 .box,
+.part_2 .box {
+  width: 300px;
+  height: 300px;
+}
+.part_1 .box .img_box,
+.part_2 .box .img_box {
+  height: 70%;
+  width: 100%;
+}
+.part_1 .box p,
+.part_2 .box p {
+  text-align: center;
+  margin-top: 10%;
+  height: 20%;
+  width: 100%;
+}
+.part_1 .img_centerbox,
+.part_2 .img_centerbox {
+  height: 300px;
+  width: 300px;
+  margin: 20px 0 40px 0;
+}
+
+.part_1 {
+  border-bottom: 1px solid black;
+}
+
+.row {
+  width: 100%;
+  height: 550px;
+  margin: 40px 0;
+}
+.row .cl_left,
+.row .cl_right {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.row .cl_left img,
+.row .cl_right img {
+  width: 100%;
+  height: 95%;
+}
+.row .cl_left_50,
+.row .cl_right_50 {
+  width: 50%;
+}
+.row .cl_left_50 h1,
+.row .cl_right_50 h1 {
+  margin: 10px 0;
+}
+.row .cl_left_50 p,
+.row .cl_right_50 p {
+  margin: 20px 0;
+}
+.row .cl_left_50 img,
+.row .cl_right_50 img {
+  height: 100%;
+}
+.row .cl_left {
+  position: relative;
+}
+.row .cl_left_50 {
+  position: absolute;
+  right: 0;
+}
+
+#feedback {
+  background-color: #ffe7d2;
+  width: 100%;
+}
+#feedback .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#feedback .container h1 {
+  margin: 10px;
+}
+#feedback .container .row_login {
+  margin: 20px 0 30px 0;
+}
+#feedback .container .row_login .btn_login {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#feedback .container .cloud {
+  position: relative;
+  border: 1px solid #2c4792;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  background-color: white;
+  text-align: left;
+}
+#feedback .container .cloud i {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 20px;
+  color: #2c4792;
+}
+#feedback .container .cloud p {
+  margin-bottom: 8px;
+}
+#feedback .container .cloud .founders {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#feedback .container .cloud .founders img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+#feedback .container .cloud .founders span {
+  font-size: 12px;
+  display: block;
+}
+#feedback .container .cloud .founders .team {
+  color: #2c4792;
+  font-weight: bold;
+}
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+footer .container h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+footer .container li {
+  list-style: none;
+  border-bottom: 8px;
+  cursor: pointer;
+}
+footer .container .col_40 {
+  width: 40%;
+}
+footer .container .col_40 img {
+  height: 40px;
+  width: 40px;
+}
+footer .container .col_40 p {
+  display: inline-block;
+  width: 90%;
+}
+footer .container .col_40 .teamBit {
+  color: #2c4792;
+  font-weight: bold;
+}
+footer .container .col_10 {
+  width: 10%;
+}
+footer .container .col_20 {
+  width: 20%;
+}

@@ -1,0 +1,338 @@
+$bgColor: #ffe7d2;
+$btnColor: #2c4792;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+// Utility
+section {
+    margin: 30px 0;
+}
+
+.more {
+    color: $btnColor;
+    margin: 10px 0;
+}
+
+//Button
+.btn {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid $btnColor;
+    color: $btnColor;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+//Header
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+
+.nav ul {
+    li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    li i {
+        font-size: 12px;
+    }
+}
+
+[class^="logo_"] {
+    height: 12px;
+    width: 12px;
+}
+
+//Jumbotron
+.jumbotron {
+    width: 100%;
+    height: 450px;
+
+    .cl_left,
+    .cl_right {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.cl_left {
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.row_login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .btn_login {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .btn {
+            color: white;
+            font-weight: bold;
+            margin: 10px 0;
+            background-color: $btnColor;
+        }
+    
+        span {
+            margin: 0 5px;
+        }
+    }
+
+    .email_login {
+        cursor: pointer;
+    }
+}
+
+.cl_right {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// Section Vignette
+#vignette {
+    background-color: $bgColor;
+}
+
+.part_1,
+.part_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 20px 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .box_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+
+        .img_box {
+            height: 70%;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            margin-top: 10%;
+            height: 20%;
+            width: 100%;
+        }
+    }
+
+    .img_centerbox {
+        height: 300px;
+        width: 300px;
+        margin: 20px 0 40px 0;
+    }
+}
+
+.part_1 {
+    border-bottom: 1px solid black;
+}
+
+// Info
+.row {
+    width: 100%;
+    height:550px;
+    margin: 40px 0;
+
+    .cl_left,
+    .cl_right {
+        float: left;
+        width: 50%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 95%;
+        }
+    }
+
+    .cl_left_50,
+    .cl_right_50 {
+        width: 50%;
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .cl_left {
+        position: relative;
+    }
+    .cl_left_50 {
+        position: absolute;
+        right: 0;
+    }
+}
+
+// Section Feedback
+#feedback {
+    background-color: $bgColor;
+    width: 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            margin: 10px;
+        }
+
+        .row_login {
+            margin: 20px 0 30px 0;
+
+            .btn_login {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    
+        .cloud {
+            position: relative;
+            border: 1px solid $btnColor;
+            border-radius: 5px;
+            padding: 5px;
+            width: 50%;
+            background-color: white;
+            text-align: left;
+            
+            i {
+                position: absolute;
+                top: -10px;
+                left: 0;
+                font-size: 20px;
+                color: $btnColor;
+
+            }
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            .founders {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-size: 12px;
+                    display: block;
+                }
+
+                .team {
+                    color: $btnColor;
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bold;
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            list-style: none;
+            border-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .col_40 {
+            width: 40%;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
+
+            p {
+                display: inline-block;
+                width: 90%;
+            }
+
+            .teamBit {
+                color: $btnColor;
+                font-weight: bold;
+            }
+        }
+
+        .col_10 {
+            width: 10%;
+        }
+
+        .col_20 {
+            width: 20%;
+        }
+    }
+}
